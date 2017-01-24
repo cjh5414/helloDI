@@ -10,7 +10,6 @@ public class MainApp {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("beans/animal.xml");
 
-
         PetOwner person = (PetOwner) context.getBean("petOwner");
         person.play();
 
